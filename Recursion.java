@@ -20,8 +20,22 @@
 // }
 
 public class Recursion {
-    public static void main(Strings[] args){
-        
+
+    public static void   NaturalNumber(int n){
+        if(n==0){
+            return;
+        }
+
+        NaturalNumber(n-1);
+        System.out.print(n+ " ");
+
+
+    }
+      
+    public static void main(String[] args){
+        int n = 10;
+        NaturalNumber(n);
     }
 }
+
 
